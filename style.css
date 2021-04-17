@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    height: 100%;
+    color: hsl(229, 6%, 66%);
+}
+ 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    max-height: 1024px;
+    padding: 0 50px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* ***** Center***** */
+
+center {
+    padding: 3% 0 0;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 34px;
+    color: hsl(234, 12%, 34%)
+}
+
+h1 {
+    font-size: 34px;
+    color: hsl(234, 12%, 34%)
+}
+
+.about {
+    padding-top: 10px;
+    max-width: 500px;
+}
+
+/* *****main****** */
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left,
+.right,
+.center {
+    width: 30%;
+}
+
+.card {
+    position: relative;
+    max-width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    border-top: 5px solid;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.center .card {
+    margin: 40px auto;
+}
+
+.cyan {
+    border-color: cyan;
+}
+
+.red {
+    border-color: red;
+}
+
+.orange {
+    border-color: orange;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.card h2 {
+    line-height: 250%;
+    color: hsl(234, 12%, 34%);
+}
+
+.card img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* *****Footer****** */
+footer {
+    height: 50px
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:730px) {
+    center {
+        padding: 20px 0;
+    }
+
+    .container {
+        height: max-content;
+        max-height: max-content;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .left,
+    .right,
+    .center {
+        width: 100%;
+    }
+}
